@@ -1,8 +1,13 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+/* @brief   Graphical main window class header of UART Timing Calculator app.
+ * @author  Caglayan DOKME, caglayandokme@gmail.com
+ * @date    November 11, 2021
+ */
+
+#pragma once
 
 /** Libraries **/
 #include <QMainWindow>
+#include "UartStats.h"
 
 /** Namespace Definition **/
 namespace Ui {
@@ -27,11 +32,10 @@ private slots:
 
 private:
     /** Members **/
-    Ui::MainWindow *ui;
+    Ui::MainWindow* ui;
+    UartStats       stats;
 
     /** Helper Methods **/
     void updateCalculation();
     QString timeToString(const float time);
 };
-
-#endif // MAINWINDOW_H

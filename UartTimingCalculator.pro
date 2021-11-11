@@ -29,6 +29,7 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
+        UartStats.h \
         mainwindow.h
 
 FORMS += \
